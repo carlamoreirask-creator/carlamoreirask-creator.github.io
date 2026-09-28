@@ -1,0 +1,421 @@
+/* ==========================================================================
+   CARLA CHIOZZINI: PORTFÓLIO DE MARKETING DIGITAL
+   Custom Styles, Animations & Polish
+   ========================================================================== */
+
+/* Configurações cromáticas e variáveis de sistema */
+
+:root {
+  --color-terracotta: #C85A17;
+  --color-terracotta-dark: #B34F12;
+  --color-terracotta-light: #F5D6C4;
+  --color-bg-light: #FBFBFD;
+  --color-bg-card-light: #FFFFFF;
+  --color-border-light: #E5E5EA;
+  --color-text-light: #1D1D1F;
+  --color-text-muted-light: #6E6E73;
+  
+  --color-bg-dark: #000000;
+  --color-bg-surface-dark: #121214;
+  --color-bg-card-dark: #1C1C1E;
+  --color-border-dark: #2C2C2E;
+  --color-text-dark: #F5F5F7;
+  --color-text-muted-dark: #A1A1A6;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar estilizada refinada */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C85A17;
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B34F12;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+/* Efeito de Vidro Translúcido Minimalista */
+.glass-nav {
+  background-color: rgba(251, 251, 253, 0.80);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.dark .glass-nav {
+  background-color: rgba(0, 0, 0, 0.80);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.80);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.dark .glass-card {
+  background: rgba(28, 28, 30, 0.80);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Animações de Scroll Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Efeito minimalista de cartões */
+.interactive-card {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.03);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
+}
+
+.dark .interactive-card {
+  background-color: #1C1C1E;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.25);
+}
+
+.interactive-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px -4px rgba(0, 0, 0, 0.06);
+  border-color: rgba(200, 90, 23, 0.35);
+}
+
+.dark .interactive-card:hover {
+  box-shadow: 0 12px 30px -4px rgba(0, 0, 0, 0.5);
+  border-color: rgba(200, 90, 23, 0.4);
+}
+
+/* Botões primários refinados */
+.btn-terracotta {
+  background-color: #C85A17;
+  color: #FFFFFF;
+  border-radius: 0.75rem;
+  transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 8px rgba(200, 90, 23, 0.18);
+}
+
+.btn-terracotta:hover {
+  background-color: #B34F12;
+  box-shadow: 0 4px 14px rgba(200, 90, 23, 0.26);
+  transform: translateY(-1px);
+}
+
+.btn-terracotta:active {
+  transform: translateY(0);
+}
+
+/* Modal e Drawer */
+.modal-overlay {
+  transition: opacity 0.3s ease;
+}
+
+.modal-content-box {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+}
+
+/* Efeitos de pulso suave para badges */
+@keyframes pulse-subtle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.08);
+  }
+}
+
+.pulse-dot {
+  animation: pulse-subtle 2s infinite ease-in-out;
+}
+
+/* Efeito de flutuação suave */
+@keyframes soft-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.floating-element {
+  animation: soft-float 5s infinite ease-in-out;
+}
+
+/* Miniaturas e Multimédia */
+.modal-thumb-btn {
+  cursor: pointer;
+  outline: none;
+}
+
+.modal-thumb-btn.ring-2 {
+  border-color: #C85A17 !important;
+  opacity: 1 !important;
+}
+
+.aspect-video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  height: auto;
+}
+
+.aspect-video img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Badge de Categoria */
+.badge-tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  letter-spacing: 0.01em;
+}
+
+/* Gradientes de texto */
+.text-gradient-terracotta {
+  background: linear-gradient(135deg, #C85A17 0%, #E07A3B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Toast Notification */
+#toast-notification {
+  transform: translateY(120px);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#toast-notification.show {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* =========================================================================
+   ACESSIBILIDADE: ELEMENTOS PARA LEITORES DE ECRÃ (WCAG 2.1)
+   ========================================================================= */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.focus\:not-sr-only:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: inherit;
+  margin: inherit;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* Regras para utilizadores que requerem movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* Anel de foco acessível com alto contraste para navegação por teclado */
+:focus-visible {
+  outline: 3px solid #C85A17 !important;
+  outline-offset: 3px !important;
+}
+
+.dark :focus-visible {
+  outline: 3px solid #C85A17 !important;
+  outline-offset: 3px !important;
+}
+
+/* Área mínima de toque acessível (44x44px) */
+button,
+[role="button"],
+.btn-terracotta,
+.theme-toggle-btn,
+#mobile-menu-btn,
+#modal-close-btn,
+#cv-modal-close-btn,
+#back-to-top-btn {
+  min-height: 44px;
+}
+
+/* Reforço de legibilidade e preenchimento dos modais em ecrãs verticais */
+@media (max-width: 640px) {
+  #project-modal,
+  #cv-modal {
+    padding: 1rem !important;
+  }
+
+  #project-modal .px-6,
+  #cv-modal .px-6 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  #cv-body-content {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+/* Otimização de renderização Core Web Vitals (ignora cálculo fora da janela de visualização) */
+#projetos,
+#competencias,
+#contacto {
+  content-visibility: auto;
+  contain-intrinsic-size: 1000px;
+}
+
+/* =========================================================================
+   ESTILOS DE IMPRESSÃO EXCLUSIVA DO CURRÍCULO (MODAL)
+   ========================================================================= */
+@media print {
+  /* Oculta rigorosamente todo o site e elementos externos ao currículo */
+  body > *:not(#cv-modal),
+  header,
+  main,
+  footer,
+  nav,
+  #project-modal,
+  #toast-notification,
+  #back-to-top-btn,
+  .ambient-glow,
+  .no-print {
+    display: none !important;
+  }
+
+  /* Reset limpo do body e html para página de papel */
+  html, body {
+    background: #ffffff !important;
+    color: #1c1917 !important;
+    font-size: 10pt !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* O contentor do modal flui normalmente como documento de impressão */
+  #cv-modal {
+    display: block !important;
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #ffffff !important;
+    overflow: visible !important;
+    box-shadow: none !important;
+    border: none !important;
+    z-index: auto !important;
+  }
+
+  /* Oculta backdrop escuro, barra de ações superior e botões */
+  #cv-modal-backdrop,
+  #cv-modal-close-btn,
+  #cv-print-btn,
+  #cv-modal-header-bar,
+  #cv-modal .no-print {
+    display: none !important;
+  }
+
+  /* Contentor interior do currículo sem limites de altura, sem sombras e sem bordas */
+  #cv-modal > div:not(#cv-modal-backdrop) {
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    max-height: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: #ffffff !important;
+    overflow: visible !important;
+  }
+
+  /* Conteúdo interior do currículo limpo */
+  #cv-body-content,
+  #cv-modal .overflow-y-auto {
+    display: block !important;
+    overflow: visible !important;
+    max-height: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: #ffffff !important;
+    color: #1c1917 !important;
+  }
+
+  /* Evita quebras de página desagradáveis no meio de blocos de informação */
+  #cv-body-content > div {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  @page {
+    margin: 12mm 15mm 12mm 15mm;
+    size: A4 portrait;
+  }
+}
