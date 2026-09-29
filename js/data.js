@@ -18,7 +18,7 @@ const PORTFOLIO_DATA = {
   },
 
   about: {
-    bio: "Com mais de 11 anos de experiência acumulada em processos administrativos e de gestão combinados com a execução prática de marketing digital, destaco-me pela organização, autonomia e foco no retorno sobre o investimento. Lidei com a presença digital completa na área imobiliária, gerindo campanhas de Meta e Google Ads, CRM, produção de conteúdo multimédia, redes sociais e a implementação pioneira de Inteligência Artificial para atendimento ao cliente. Atualmente a concluir a especialização como Técnica Especialista em Marketing Digital pelo IEFP Sintra.",
+    bio: "Com mais de 11 anos de experiência acumulada em processos administrativos e de gestão combinados com a execução prática de marketing digital, destaco-me pela organização, autonomia e foco no retorno sobre o investimento. Lidei com a presença digital completa na área imobiliária, gerindo campanhas de Meta e Google Ads, CRM, produção de conteúdo multimédia, redes sociais e a implementação pioneira de inteligência artificial para atendimento ao cliente. Atualmente a concluir a especialização como técnica especialista em marketing digital pelo IEFP Sintra.",
     
     pillars: [
       {
@@ -49,15 +49,15 @@ const PORTFOLIO_DATA = {
         title: "Técnica especialista em marketing digital",
         institution: "IEFP Sintra",
         period: "Em conclusão",
-        description: "Formação avançada em estratégia omnicanal, SEO, SEA, CRM, Web Analytics, Estratégia de Conteúdos e Campanhas Digitais Integradas.",
-        badge: "Especialização Nível 5"
+        description: "Formação avançada em estratégia omnicanal, SEO, SEA, CRM, web analytics, estratégia de conteúdos e campanhas digitais integradas.",
+        badge: "Especialização nível 5"
       },
       {
         title: "Tecnólogo em design de interiores",
         institution: "FAAL",
-        period: "Ensino Superior / Concluído",
+        period: "Ensino superior / Concluído",
         description: "Desenvolvimento de sensibilidade estética, proporção espacial, psicologia das cores e experiência do utilizador que enriquecem o design visual e UX.",
-        badge: "Ensino Superior"
+        badge: "Ensino superior"
       }
     ],
 
@@ -73,7 +73,7 @@ const PORTFOLIO_DATA = {
         icon: "bar-chart-3"
       },
       {
-        name: "Design Thinking",
+        name: "Design thinking",
         issuer: "Inovação e metodologias ágeis",
         icon: "lightbulb"
       }
@@ -95,9 +95,9 @@ const PORTFOLIO_DATA = {
       title: "Banco CTT | Link Seguro e estratégia Gen Z",
       category: "estrategia",
       categoryLabel: "Estratégia e storytelling",
-      summary: "Trabalho desenvolvido no âmbito da unidade curricular Conceber e Implementar a Estratégia de Marketing Digital no IEFP Sintra. O projeto consistiu na criação do conceito Link Seguro para o Banco CTT, uma solução pensada para jovens universitários que compram e vendem em plataformas como OLX e Vinted, integrando pagamentos por MBWay com a verificação de encomendas nos Cacifos CTT.",
+      summary: "Trabalho desenvolvido no âmbito da unidade curricular Conceber e implementar a estratégia de marketing digital no IEFP Sintra. O projeto consistiu na criação do conceito Link Seguro para o Banco CTT, uma solução pensada para jovens universitários que compram e vendem em plataformas como OLX e Vinted, integrando pagamentos por MBWay com a verificação de encomendas nos Cacifos CTT.",
       tags: ["EstratégiaDigital", "MarketingMulticanal", "LandingPagesWix", "FunilAIDA", "Storytelling", "GeraçãoZ"],
-      metrics: "Simulação Prática | IEFP Sintra",
+      metrics: "Simulação prática | IEFP Sintra",
       coverImage: "assets/images/banco-ctt-cover.png",
       mediaType: "image",
       link: "https://canva.link/4if9xkxbdhkzjz6",
@@ -123,9 +123,9 @@ const PORTFOLIO_DATA = {
       title: "Detetive de Pesquisa | SEO local e mercado LSF",
       category: "seo",
       categoryLabel: "SEO e pesquisa",
-      summary: "Estudo prático e auditoria digital desenvolvidos no âmbito da formação de Marketing Digital no IEFP Sintra, aplicados ao setor de construção em Light Steel Frame (LSF) em Portugal. Reuniu uma análise comparativa entre pesquisa anónima e personalizada, avaliação de velocidade no PageSpeed Insights e diagnóstico de posicionamento na página de resultados do Google.",
+      summary: "Estudo prático e auditoria digital desenvolvidos no âmbito da formação de marketing digital no IEFP Sintra, aplicados ao setor de construção em Light Steel Frame (LSF) em Portugal. Reuniu uma análise comparativa entre pesquisa anónima e personalizada, avaliação de velocidade no PageSpeed Insights e diagnóstico de posicionamento na página de resultados do Google.",
       tags: ["SEOLocal", "GoogleSearch", "IntençãodeBusca", "PesquisadeMercado", "Benchmarking", "ConstruçãoLSF"],
-      metrics: "Simulação Prática | IEFP Sintra",
+      metrics: "Simulação prática | IEFP Sintra",
       coverImage: "assets/images/detetive-pesquisa-seo.png",
       mediaType: "image",
       pdfUrl: "assets/docs/detetive-de-pesquisa.pdf",
@@ -152,9 +152,9 @@ const PORTFOLIO_DATA = {
       title: "Campanha de storytelling | Havaianas",
       category: "estrategia",
       categoryLabel: "Estratégia e storytelling",
-      summary: "Exercício prático de planeamento de comunicação e narrativa transmédia de marca realizado na formação de Marketing Digital no IEFP Sintra. Sob o mote 'Para onde eu for, o Brasil me acompanha', a simulação explora a ligação afetiva ao produto como símbolo de identidade cultural e memória da comunidade brasileira residente em Portugal, estruturando a mensagem para redes sociais e suportes audiovisuais.",
+      summary: "Exercício prático de planeamento de comunicação e narrativa transmédia de marca realizado na formação de marketing digital no IEFP Sintra. Sob o mote 'Para onde eu for, o Brasil me acompanha', a simulação explora a ligação afetiva ao produto como símbolo de identidade cultural e memória da comunidade brasileira residente em Portugal, estruturando a mensagem para redes sociais e suportes audiovisuais.",
       tags: ["Storytelling", "NarrativaTransmédia", "Copywriting", "ComunicaçãoDeMarca", "EstratégiaDeConteúdos", "RedesSociais"],
-      metrics: "Simulação Prática | IEFP Sintra",
+      metrics: "Simulação prática | IEFP Sintra",
       coverImage: "assets/images/havaianas-storytelling.png",
       mediaType: "image",
       pdfUrl: "assets/docs/campanha-storytelling-havaianas.pdf",
@@ -181,11 +181,11 @@ const PORTFOLIO_DATA = {
       title: "Landing page | Depois do Café",
       category: "landing-pages",
       categoryLabel: "Landing pages",
-      summary: "Primeiro exercício prático de criação de landing pages realizado na formação de Marketing Digital no IEFP Sintra, com foco na aprendizagem dos fundamentos da plataforma Wix. O objetivo pedagógico consistiu em estruturar uma página simples e focada no essencial: definir uma proposta temática em torno da leitura, posicionar estrategicamente o botão de chamada para ação (CTA) e desenhar um formulário de subscrição funcional associado a uma meta formativa de 50 contactos.",
+      summary: "Primeiro exercício prático de criação de landing pages realizado na formação de marketing digital no IEFP Sintra, com foco na aprendizagem dos fundamentos da plataforma Wix. O objetivo pedagógico consistiu em estruturar uma página simples e focada no essencial: definir uma proposta temática em torno da leitura, posicionar estrategicamente o botão de chamada para ação (CTA) e desenhar um formulário de subscrição funcional associado a uma meta formativa de 50 contactos.",
       tags: ["Wix", "LandingPages", "PrimeiroProjeto", "BotãoDeAçãoCTA", "CaptaçãoDeContactos", "HierarquiaVisual"],
       link: "https://carlamoreirask.wixsite.com/depoisdocafe",
       linkText: "Aceder à página no Wix",
-      metrics: "Simulação Prática | IEFP Sintra",
+      metrics: "Simulação prática | IEFP Sintra",
       coverImage: "assets/images/depois-do-cafe-mockup.png",
       mediaType: "image",
       details: {
@@ -208,11 +208,11 @@ const PORTFOLIO_DATA = {
       title: "Landing page | Muda o Jogo",
       category: "landing-pages",
       categoryLabel: "Landing pages",
-      summary: "Exercício prático de conceção de uma landing page no Wix articulada com uma campanha de antecipação (teaser), desenvolvido na formação de Marketing Digital no IEFP Sintra. O trabalho consistiu em simular um ponto de contacto digital para suportes físicos impressos com QR Code, convidando o público a registar-se para receber novidades em primeira mão antes do lançamento final.",
+      summary: "Exercício prático de conceção de uma landing page no Wix articulada com uma campanha de antecipação (teaser), desenvolvido na formação de marketing digital no IEFP Sintra. O trabalho consistiu em simular um ponto de contacto digital para suportes físicos impressos com QR Code, convidando o público a registar-se para receber novidades em primeira mão antes do lançamento final.",
       tags: ["Wix", "LandingPages", "CampanhaTeaser", "QRCode", "DesignResponsivo", "CaptaçãoDeContactos"],
       link: "https://carlamoreirask.wixsite.com/mudaojogo",
       linkText: "Aceder à página no Wix",
-      metrics: "Simulação Prática | IEFP Sintra",
+      metrics: "Simulação prática | IEFP Sintra",
       coverImage: "assets/images/muda-o-jogo-poster.png",
       mediaType: "image",
       details: {
@@ -235,9 +235,9 @@ const PORTFOLIO_DATA = {
       title: "Imob VR | Vídeo promocional PropTech",
       category: "multimedia",
       categoryLabel: "Multimédia",
-      summary: "Exercício prático de comunicação multimédia realizado no âmbito da formação de Marketing Digital no IEFP Sintra, centrado numa simulação promocional de soluções digitais para o setor imobiliário. O trabalho compreendeu a redação de um guião comercial, a seleção de recursos visuais e a edição completa de vídeo no CapCut, demonstrando as vantagens das visitas virtuais na apresentação de imóveis.",
+      summary: "Exercício prático de comunicação multimédia realizado no âmbito da formação de marketing digital no IEFP Sintra, centrado numa simulação promocional de soluções digitais para o setor imobiliário. O trabalho compreendeu a redação de um guião comercial, a seleção de recursos visuais e a edição completa de vídeo no CapCut, demonstrando as vantagens das visitas virtuais na apresentação de imóveis.",
       tags: ["CapCut", "EdiçãoDeVídeo", "VídeoMarketing", "RedesSociais", "SetorImobiliário", "MarketingDigital"],
-      metrics: "Simulação Prática | IEFP Sintra",
+      metrics: "Simulação prática | IEFP Sintra",
       coverImage: "assets/images/imob-vr-poster.jpg",
       videoUrl: "assets/videos/imob-vr.mp4",
       mediaType: "video",
@@ -261,9 +261,9 @@ const PORTFOLIO_DATA = {
       title: "Primeira campanha Meta Ads | Tráfego pago local",
       category: "trafego",
       categoryLabel: "Tráfego pago",
-      summary: "Exercício prático de planeamento e configuração de uma campanha de notoriedade no Gestor de Anúncios da Meta, desenvolvido no âmbito da formação de Marketing Digital no IEFP Sintra. O trabalho compreendeu a definição simulada de audiências locais na Figueira da Foz (faixa etária dos 24 aos 50 anos), a aplicação de criativos dinâmicos com múltiplos textos e imagens e a validação técnica da estrutura da campanha com pontuação de 91 pontos.",
+      summary: "Exercício prático de planeamento e configuração de uma campanha de notoriedade no Gestor de Anúncios da Meta, desenvolvido no âmbito da formação de marketing digital no IEFP Sintra. O trabalho compreendeu a definição simulada de audiências locais na Figueira da Foz (faixa etária dos 24 aos 50 anos), a aplicação de criativos dinâmicos com múltiplos textos e imagens e a validação técnica da estrutura da campanha com pontuação de 91 pontos.",
       tags: ["MetaAds", "TráfegoPago", "GestorDeAnúncios", "CriativoDinâmico", "MarketingLocal", "AnáliseDeMétricas"],
-      metrics: "Simulação Prática | IEFP Sintra",
+      metrics: "Simulação prática | IEFP Sintra",
       coverImage: "assets/images/meta-ads-creative.png",
       mediaType: "image",
       pdfUrl: "assets/docs/campanha-meta-ads.pdf",
@@ -302,7 +302,7 @@ const PORTFOLIO_DATA = {
           { name: "Google Ads", desc: "Campanhas na rede de pesquisa, seleção de palavras-chave com intenção comercial e acompanhamento de CPC e cliques." },
           { name: "Otimização para motores de busca (SEO)", desc: "Pesquisa de tendências e termos de pesquisa, estruturação de artigos e presença local no Google Perfil de Empresa." },
           { name: "Métricas e análise de campanhas", desc: "Leitura de indicadores essenciais como alcance, impressões, cliques, CTR, custo por contacto e conversões." },
-          { name: "Web Analytics", desc: "Noções práticas de Google Analytics 4 para análise de origens de tráfego e comportamento do utilizador." },
+          { name: "Web analytics", desc: "Noções práticas de Google Analytics 4 para análise de origens de tráfego e comportamento do utilizador." },
           { name: "E-mail marketing e automação", desc: "Estruturação de sequências de mensagens, formulários de subscrição e partilha periódica de conteúdos." }
         ]
       },
