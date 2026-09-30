@@ -6,8 +6,8 @@
 /* Configurações cromáticas e variáveis de sistema */
 
 :root {
-  --color-terracotta: #C85A17;
-  --color-terracotta-dark: #B34F12;
+  --color-terracotta: #B84C0E;
+  --color-terracotta-dark: #9E3E07;
   --color-terracotta-light: #F5D6C4;
   --color-bg-light: #FBFBFD;
   --color-bg-card-light: #FFFFFF;
@@ -45,14 +45,14 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #C85A17;
+  background: #B84C0E;
   border-radius: 9999px;
   border: 2px solid transparent;
   background-clip: content-box;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #B34F12;
+  background: #9E3E07;
   border: 2px solid transparent;
   background-clip: content-box;
 }
@@ -112,26 +112,26 @@ html {
 .interactive-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 30px -4px rgba(0, 0, 0, 0.06);
-  border-color: rgba(200, 90, 23, 0.35);
+  border-color: rgba(184, 76, 14, 0.35);
 }
 
 .dark .interactive-card:hover {
   box-shadow: 0 12px 30px -4px rgba(0, 0, 0, 0.5);
-  border-color: rgba(200, 90, 23, 0.4);
+  border-color: rgba(184, 76, 14, 0.4);
 }
 
 /* Botões primários refinados */
 .btn-terracotta {
-  background-color: #C85A17;
+  background-color: #B84C0E;
   color: #FFFFFF;
   border-radius: 0.75rem;
   transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
-  box-shadow: 0 2px 8px rgba(200, 90, 23, 0.18);
+  box-shadow: 0 2px 8px rgba(184, 76, 14, 0.18);
 }
 
 .btn-terracotta:hover {
-  background-color: #B34F12;
-  box-shadow: 0 4px 14px rgba(200, 90, 23, 0.26);
+  background-color: #9E3E07;
+  box-shadow: 0 4px 14px rgba(184, 76, 14, 0.28);
   transform: translateY(-1px);
 }
 
@@ -185,7 +185,7 @@ html {
 }
 
 .modal-thumb-btn.ring-2 {
-  border-color: #C85A17 !important;
+  border-color: #B84C0E !important;
   opacity: 1 !important;
 }
 
@@ -215,7 +215,7 @@ html {
 
 /* Gradientes de texto */
 .text-gradient-terracotta {
-  background: linear-gradient(135deg, #C85A17 0%, #E07A3B 100%);
+  background: linear-gradient(135deg, #B84C0E 0%, #E07A3B 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -276,12 +276,12 @@ html {
 
 /* Anel de foco acessível com alto contraste para navegação por teclado */
 :focus-visible {
-  outline: 3px solid #C85A17 !important;
+  outline: 3px solid #B84C0E !important;
   outline-offset: 3px !important;
 }
 
 .dark :focus-visible {
-  outline: 3px solid #C85A17 !important;
+  outline: 3px solid #DE9974 !important;
   outline-offset: 3px !important;
 }
 

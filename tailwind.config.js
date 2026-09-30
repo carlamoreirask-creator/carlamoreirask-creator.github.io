@@ -13,9 +13,9 @@ module.exports = {
           200: '#F5DCCF',
           300: '#ECC3AC',
           400: '#DE9974',
-          500: '#C85A17',
-          600: '#B34F12',
-          700: '#923E0C',
+          500: '#B84C0E',
+          600: '#9E3E07',
+          700: '#873406',
           800: '#75320D',
           900: '#5E290E',
         },
@@ -37,7 +37,7 @@ module.exports = {
       boxShadow: {
         'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.03)',
         'card': '0 4px 20px -2px rgba(0, 0, 0, 0.04)',
-        'terracotta': '0 4px 14px rgba(200, 90, 23, 0.18)',
+        'terracotta': '0 4px 14px rgba(184, 76, 14, 0.22)',
       }
     }
   },
