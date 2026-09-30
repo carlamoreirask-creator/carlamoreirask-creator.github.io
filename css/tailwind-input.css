@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* ==========================================================================
    CARLA CHIOZZINI: PORTFÓLIO DE MARKETING DIGITAL
    Custom Styles, Animations & Polish

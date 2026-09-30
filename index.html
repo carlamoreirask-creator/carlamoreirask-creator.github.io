@@ -30,53 +30,11 @@
     href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
     media="print" onload="this.media='all'">
 
-  <!-- Tailwind CSS CDN com Configuração Customizada -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            terracotta: {
-              50: '#FDF8F5',
-              100: '#FBF0E9',
-              200: '#F5DCCF',
-              300: '#ECC3AC',
-              400: '#DE9974',
-              500: '#C85A17', // Destaque Terracota Premium
-              600: '#B34F12', // Terracota Hover
-              700: '#923E0C',
-              800: '#75320D',
-              900: '#5E290E',
-            },
-            theme: {
-              bgLight: '#FBFBFD',
-              bgDark: '#000000',
-              cardLight: '#FFFFFF',
-              cardDark: '#1C1C1E',
-              borderLight: '#E5E5EA',
-              borderDark: '#2C2C2E',
-              textLight: '#1D1D1F',
-              textMuted: '#6E6E73',
-            }
-          },
-          fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
-            heading: ['Outfit', '"Plus Jakarta Sans"', 'sans-serif'],
-          },
-          boxShadow: {
-            'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.03)',
-            'card': '0 4px 20px -2px rgba(0, 0, 0, 0.04)',
-            'terracotta': '0 4px 14px rgba(200, 90, 23, 0.18)',
-          }
-        }
-      }
-    }
-  </script>
+  <!-- Preload da Imagem LCP (Hero) -->
+  <link rel="preload" as="image" href="assets/images/carla-chiozzini-384.webp" type="image/webp" fetchpriority="high">
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/styles.css">
+  <!-- Folha de Estilos Otimizada e Minificada (Tailwind CSS compilado + Estilos Customizados) -->
+  <link rel="stylesheet" href="css/styles.min.css">
 
   <!-- Gestor Inicial de Tema (Prevenção de flash de estilo sem bloqueio de renderização) -->
   <script>
@@ -284,10 +242,18 @@
               <!-- Moldura Redonda Minimalista -->
               <div
                 class="relative w-full h-full rounded-full p-2 bg-white dark:bg-[#1C1C1E] border border-black/5 dark:border-white/10 shadow-xl overflow-hidden group">
-                <img src="assets/images/carla-chiozzini.jpg"
-                  alt="Carla Chiozzini | Técnica especialista em marketing digital" width="384" height="384"
-                  loading="eager" fetchpriority="high" decoding="sync"
-                  class="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-500 ease-out">
+                <picture>
+                  <source type="image/webp"
+                    srcset="assets/images/carla-chiozzini-192.webp 192w, assets/images/carla-chiozzini-384.webp 384w, assets/images/carla-chiozzini-768.webp 768w"
+                    sizes="(max-width: 640px) 192px, (max-width: 1024px) 256px, 384px">
+                  <source type="image/jpeg"
+                    srcset="assets/images/carla-chiozzini-192.jpg 192w, assets/images/carla-chiozzini-384.jpg 384w, assets/images/carla-chiozzini-768.jpg 768w"
+                    sizes="(max-width: 640px) 192px, (max-width: 1024px) 256px, 384px">
+                  <img src="assets/images/carla-chiozzini-384.webp"
+                    alt="Carla Chiozzini | Técnica especialista em marketing digital" width="384" height="384"
+                    loading="eager" fetchpriority="high" decoding="async"
+                    class="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-500 ease-out">
+                </picture>
               </div>
             </div>
           </div>
@@ -1025,7 +991,7 @@
   </button>
 
   <!-- Scripts do Portfólio com carregamento diferido (defer) -->
-  <script src="https://unpkg.com/lucide@latest" defer></script>
+  <script src="js/lucide.min.js" defer></script>
   <script src="js/data.js" defer></script>
   <script src="js/theme.js" defer></script>
   <script src="js/projects.js" defer></script>
