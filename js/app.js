@@ -22,7 +22,6 @@
   window.prepareAccessibleIcons = prepareAccessibleIcons;
 
   document.addEventListener('DOMContentLoaded', () => {
-    prepareAccessibleIcons();
     initNavigation();
     initScrollReveal();
     initContactForm();
@@ -32,8 +31,8 @@
     initStatsCounters();
     initModalFocusManagement();
 
-    // Cria ícones Lucide após inicialização
-    if (window.lucide && typeof window.lucide.createIcons === 'function') {
+    // Cria ícones Lucide dinâmicos apenas se houver novos elementos data-lucide
+    if (window.lucide && typeof window.lucide.createIcons === 'function' && document.querySelector('[data-lucide]')) {
       window.lucide.createIcons();
       prepareAccessibleIcons();
     }
@@ -548,7 +547,7 @@
       const selector = 'a[href], button:not([disabled]), textarea:not([disabled]), input:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"])';
       const nodes = container.querySelectorAll(selector);
       return Array.prototype.filter.call(nodes, (el) => {
-        return (el.checkVisibility ? el.checkVisibility() : el.offsetParent !== null) || el === document.activeElement;
+        return !el.hasAttribute('disabled') && el.getAttribute('aria-hidden') !== 'true';
       });
     }
   }
