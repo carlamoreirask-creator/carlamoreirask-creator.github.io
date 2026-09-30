@@ -7,9 +7,54 @@
   let activeCategory = 'all';
 
   function initProjects() {
-    renderCategoryFilters();
-    renderProjectCards('all');
+    setupCategoryFilters();
+    setupInitialCards();
     setupModalEvents();
+  }
+
+  function setupCategoryFilters() {
+    const filterContainer = document.getElementById('project-filters');
+    if (!filterContainer) return;
+
+    const existingBtns = filterContainer.querySelectorAll('.filter-btn');
+    if (existingBtns.length > 0) {
+      existingBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const cat = btn.getAttribute('data-category');
+          if (activeCategory === cat) return;
+          activeCategory = cat;
+
+          filterContainer.querySelectorAll('.filter-btn').forEach((b) => {
+            const isSelected = b.getAttribute('data-category') === activeCategory;
+            b.className = `filter-btn px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 border ${
+              isSelected
+                ? 'bg-terracotta-500 text-white border-terracotta-500 shadow-sm'
+                : 'bg-white dark:bg-[#1C1C1E] text-stone-700 dark:text-zinc-300 border-black/5 dark:border-white/10 hover:border-terracotta-400 hover:text-terracotta-600 dark:hover:text-terracotta-400'
+            }`;
+          });
+
+          renderProjectCards(activeCategory);
+        });
+      });
+    } else {
+      renderCategoryFilters();
+    }
+  }
+
+  function setupInitialCards() {
+    const grid = document.getElementById('projects-grid');
+    if (!grid) return;
+    if (grid.children.length === 0) {
+      renderProjectCards('all');
+    } else {
+      grid.querySelectorAll('.interactive-card[data-id]').forEach((card) => {
+        card.addEventListener('click', (e) => {
+          if (e.target.closest('a')) return;
+          const id = card.getAttribute('data-id');
+          if (id) openProjectModal(id);
+        });
+      });
+    }
   }
 
   // Renderiza botões de filtro de categorias
