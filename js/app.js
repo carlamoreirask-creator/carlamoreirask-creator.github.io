@@ -146,6 +146,9 @@
     setActiveNav('sobre');
 
     // Toggle menu mobile
+    const MENU_ICON_SVG = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu w-6 h-6" aria-hidden="true"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>';
+    const CLOSE_ICON_SVG = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x w-6 h-6" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>';
+
     if (mobileBtn && mobileMenu) {
       mobileBtn.addEventListener('click', () => {
         const isExpanded = mobileBtn.getAttribute('aria-expanded') === 'true';
@@ -155,11 +158,7 @@
         // Alterna ícone do botão
         const iconContainer = mobileBtn.querySelector('.menu-icon-container');
         if (iconContainer) {
-          iconContainer.innerHTML = isExpanded
-            ? '<i data-lucide="menu" class="w-6 h-6"></i>'
-            : '<i data-lucide="x" class="w-6 h-6"></i>';
-          prepareAccessibleIcons();
-          if (window.lucide) window.lucide.createIcons();
+          iconContainer.innerHTML = isExpanded ? MENU_ICON_SVG : CLOSE_ICON_SVG;
         }
       });
 
@@ -170,9 +169,7 @@
           mobileBtn.setAttribute('aria-expanded', 'false');
           const iconContainer = mobileBtn.querySelector('.menu-icon-container');
           if (iconContainer) {
-            iconContainer.innerHTML = '<i data-lucide="menu" class="w-6 h-6"></i>';
-            prepareAccessibleIcons();
-            if (window.lucide) window.lucide.createIcons();
+            iconContainer.innerHTML = MENU_ICON_SVG;
           }
         });
       });
